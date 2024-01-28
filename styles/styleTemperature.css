@@ -1,0 +1,57 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: arial;
+    background-color: rgba(177, 207, 228, 0.404);
+}
+
+/*main*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedede;
+    height: 400px;
+    width: 50%;
+    margin: 80px auto;
+    border-radius: 30px;
+    gap: 40px;
+}
+
+.icon-temp{
+    display: flex;
+    font-size: 60px;
+    justify-content: space-around;
+}
+.icon-temp p{
+    margin: 0;
+}
+
+.flex-convert{
+    display: flex;
+    gap: 10px;
+    height: 40px;
+}
+.flex-convert button{
+    background-color: rgba(30, 209, 30, 0.644);
+    color: white;
+    font-size: 17px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    
+
+}
+#conversion{
+    display: flex;
+    background-color: rgb(204, 200, 200);
+    font-size: 17px;
+    padding: 0 20px;
+    border-radius: 10px;
+    margin: 0;
+    align-items: center;
+}
