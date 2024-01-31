@@ -6,6 +6,9 @@ let counter = 0;
 function increase(){
     console.log(++counter);
     document.getElementById("total").innerHTML = counter;
+    if(counter==5){
+        console.log("It's five");
+    }
 }
 function decrease(){
     console.log(--counter);

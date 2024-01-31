@@ -15,3 +15,7 @@ body{
 #total{
     font-size: 50px;
 }
+
+.alert-error{
+    color:red;
+}

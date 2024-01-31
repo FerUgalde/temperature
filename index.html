@@ -14,12 +14,19 @@
                 <p>⛅</p>
                 <p>🌨️</p>
             </div>
-            <h1>Convert Celsius to Fahrenheit</h1>
+            <h1>Convert Temperature</h1>
         </div>
         <div class="flex-convert">
-            <button onclick="convertCtoF()">°C 🔁 °F</button>
-            <p id="conversion"></p>
+            <p>Specify the temperature scale you will enter</p>
+            <select name="tempScale" id="scale">
+                <option value="" disabled selected>Scale:</option>
+                <option value="c">Celcius</option>
+                <option value="f">Fahrenheit</option>
+            </select>
+            <input type="number" id="temperature" placeholder="Enter Tmperature:">
+            <button onclick="convertTemperature()">Convert</button>
         </div>
+        <p id="conversion"></p>
     </main>
 
     <script src="./scripts/scriptTemperature.js"></script>
