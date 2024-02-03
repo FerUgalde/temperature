@@ -3,35 +3,19 @@ function convertTemperature(){
     let temperatureMax = parseFloat(document.getElementById('temperatureMax').value);
     let temperatureMin = parseFloat(document.getElementById('temperatureMin').value);
     let rangeConv = "";
-    let termoClass = "";
 
 
-    if (temperatureMax<0){
-        for(let temperature=temperatureMax; temperature>=temperatureMin; temperature--){
-            if(scale=="Celsius"){
-                // Convert to Fahrenheit
-                var tempConv = (temperature * 9/5) + 32;
-                var scaleConv = "Fahrenheit";
-            }else if(scale=="Fahrenheit"){
-                // Convert to Celsius
-                var tempConv = (temperature - 32) * 5/9;
-                var scaleConv = "Celsius";
-            }
-            rangeConv +=`<p>The conversion of ${scale} ${temperature}° to ${scaleConv}° is ${tempConv} °</p><br>`;
+    for(let temperature=temperatureMin; temperature<=temperatureMax; temperature++){
+        if(scale=="Celsius"){
+            // Convert to Fahrenheit
+            var tempConv = (temperature * 9/5) + 32;
+            var scaleConv = "Fahrenheit";
+        }else if(scale=="Fahrenheit"){
+            // Convert to Celsius
+            var tempConv = (temperature - 32) * 5/9;
+            var scaleConv = "Celsius";
         }
-    }else{
-        for(let temperature=temperatureMin; temperature<=temperatureMax; temperature++){
-            if(scale=="Celsius"){
-                // Convert to Fahrenheit
-                var tempConv = (temperature * 9/5) + 32;
-                var scaleConv = "Fahrenheit";
-            }else if(scale=="Fahrenheit"){
-                // Convert to Celsius
-                var tempConv = (temperature - 32) * 5/9;
-                var scaleConv = "Celsius";
-            }
-            rangeConv +=`<p>The conversion of ${scale} ${temperature}° to ${scaleConv}° is ${tempConv} °</p><br>`;
-        }
+        rangeConv +=`<p>The conversion of ${scale} ${temperature}° to ${scaleConv}° is ${tempConv} °</p><br>`;
     }
 
     document.getElementById("conversion").innerHTML = rangeConv;
