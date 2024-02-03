@@ -16,16 +16,23 @@
             </div>
             <h1>Convert Temperature</h1>
         </div>
-        <div class="flex-convert">
-            <p>Specify the temperature scale you will enter</p>
-            <select name="tempScale" id="scale">
-                <option value="" disabled selected>Scale:</option>
-                <option value="c">Celcius</option>
-                <option value="f">Fahrenheit</option>
-            </select>
-            <input type="number" id="temperature" placeholder="Enter Tmperature:">
-            <button onclick="convertTemperature()">Convert</button>
-        </div>
+        <div class="termo-function">
+            <div class="flex-convert">
+                <p>Specify the temperature scale you will enter</p>
+                <select name="tempScale" id="scale">
+                    <option value="" disabled selected>Scale:</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                </select>
+                <p>Enter a range of temperature to convert</p>
+                <input type="number" id="temperatureMin" placeholder="Enter Minimum Tmperature:">
+                <input type="number" id="temperatureMax" placeholder="Enter Maximum Tmperature:">
+                <button onclick="convertTemperature()">Convert</button>
+            </div> <!-- flex-convert ends-->
+            <div class="termo" id="mercury">
+
+            </div>
+        </div> <!-- .termo-function ends -->
         <p id="conversion"></p>
     </main>
 

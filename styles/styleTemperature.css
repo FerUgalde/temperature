@@ -68,10 +68,66 @@ select{
 }
 #conversion{
     display: flex;
+    flex-direction: column;
     background-color: rgb(204, 200, 200);
     font-size: 22px;
     padding: 5px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-    align-items: center;
+    align-items: flex-start;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.termo-function{
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+}
+.termo{
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.mercury{
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    padding: 30px;
+    border: none;
+    flex-grow: 1;
+}
+.mercuryW{
+    background-color: white;
+    height: 5%;
+}
+.mercuryB{
+    background-color: blue;
+    height: 15%;
+}
+.mercuryBL{
+    background-color: lightblue;
+    height: 25%;
+}
+.mercuryY{
+    background-color: yellow;
+    height: 35%;
+}
+.mercuryO{
+    background-color: orange;
+    height: 45%;
+}
+.mercuryRL{
+    background-color: rgb(247, 62, 62);
+    height: 55%;
+}
+.mercuryR{
+    background-color: rgb(194, 16, 16);
+    height: 70%;
+}
+.mercuryGC{
+    background-color: rgb(131, 12, 57);
+    height: 100%;
 }
